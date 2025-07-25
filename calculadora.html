@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+    <title>Calculadora</title>
+<link rel="stylesheet" href="{{ url_for('static',filename='st')}}">
+</head>
+<body>
+ <header>
+<h1>Calculadora</h1>
+<p>Realize operações matemáticas simples<p>
+</header>
+<nav>
+<ul>
+<li><a href="/">Início</a></li>
+<li><a href="/calculadora">Calculadora</a></li>
+ </ul>
+</nav>
+<section>
+ <form method="POST"
+<label>Número 1: </label><br>
+<input tipe="number" name="num1" step="any" required><br><br>
+<label>Número 2: </label><br>
+<input tipe="number" name="num2" step="any" required><br><br>
+<label>Operação</label><br>
+<select name="Operacao">
+<option value=" soma">Soma (+)</option>
+<option value="subtracao">Subtração (-)</option>
+<option value="multiplicacao">Multiplicação (x)</option>
+<option value="divisao">divisão (/)</option>
+</select><br><br>
+<button type="submit">Calcular</button>
+</form>
+</section>
+</body>
+</html>
